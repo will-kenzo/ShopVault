@@ -1,16 +1,44 @@
 {
     "name": "my-monorepo",
-    "workspaces": ["apps/*", "packages/*"],
+    "version": "1.0.0",
+    "description": "This is ShopVault's package file in which contains core information about the project.",
+    "keywords": [
+        "e-commerce",
+        "online",
+        "shopping",
+        "products",
+        "buy",
+        "marketingchina",
+        "quality",
+        "easy",
+        "tough"
+    ],
+    "homepage": "https://github.com/will-kenzo/ShopVault#readme",
+    "bugs": {
+        "url": "https://github.com/will-kenzo/ShopVault/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/will-kenzo/ShopVault.git"
+    },
+    "license": "MIT",
+    "author": "William Kenzo",
+    "type": "commonjs",
+    "main": "index.js",
+    "workspaces": [
+        "apps/*",
+        "packages/*"
+    ],
     "scripts": {
-      "dev": "turbo dev",
-      "build": "turbo build",
-      "lint": "turbo lint",
-      "start": "turbo start"
+        "dev": "turbo dev",
+        "build": "turbo build",
+        "lint": "turbo lint",
+        "start": "turbo start"
     },
     "devDependencies": {
-      "turbo": "latest",
-      "typescript": "^5.0.0",
-      "eslint": "^8.0.0",
-      "prettier": "^3.0.0"
+        "turbo": "latest",
+        "typescript": "^5.0.0",
+        "eslint": "^8.0.0",
+        "prettier": "^3.0.0"
     }
-  }
+}
