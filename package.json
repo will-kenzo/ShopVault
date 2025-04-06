@@ -1,0 +1,16 @@
+{
+    "name": "my-monorepo",
+    "workspaces": ["apps/*", "packages/*"],
+    "scripts": {
+      "dev": "turbo dev",
+      "build": "turbo build",
+      "lint": "turbo lint",
+      "start": "turbo start"
+    },
+    "devDependencies": {
+      "turbo": "latest",
+      "typescript": "^5.0.0",
+      "eslint": "^8.0.0",
+      "prettier": "^3.0.0"
+    }
+  }

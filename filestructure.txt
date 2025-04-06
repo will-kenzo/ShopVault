@@ -1,0 +1,54 @@
+my-monorepo/
+├── .github/                  # GitHub Actions CI/CD workflows
+│   └── workflows/
+│       ├── client-ci.yml     # Frontend tests/builds
+│       └── server-ci.yml     # Backend tests/builds
+├── apps/
+│   ├── client/               # React Frontend (SPA/PWA)
+│   │   ├── public/           # Static assets (favicon, robots.txt)
+│   │   │   └── index.html
+│   │   ├── src/
+│   │   │   ├── assets/       # Images, fonts, etc.
+│   │   │   ├── components/   # Reusable UI (Button, Navbar)
+│   │   │   ├── context/      # React context (auth, theme)
+│   │   │   ├── hooks/        # Custom hooks (useFetch, useAuth)
+│   │   │   ├── pages/        # Route-based components (Home, Profile)
+│   │   │   ├── services/     # API clients (axios, fetch wrappers)
+│   │   │   ├── styles/       # Global CSS/tailwind config
+│   │   │   ├── types/        # Frontend-specific types (props, state)
+│   │   │   ├── App.tsx
+│   │   │   └── main.tsx
+│   │   ├── .env.local        # Frontend environment variables
+│   │   ├── index.css
+│   │   ├── package.json
+│   │   └── tsconfig.json
+│   └── server/               # Node.js/Express Backend
+│       ├── src/
+│       │   ├── config/       # Env/config files (DB, auth)
+│       │   ├── controllers/  # Route handlers (userController.ts)
+│       │   ├── middleware/   # Auth, error handling, validation
+│       │   ├── models/       # Database models (User.ts)
+│       │   ├── routes/       # API endpoints (userRoutes.ts)
+│       │   ├── utils/        # Helpers (logger, API utils)
+│       │   ├── app.ts        # Express app setup
+│       │   └── server.ts     # Server entry
+│       ├── .env              # Backend environment variables
+│       ├── package.json
+│       └── tsconfig.json
+├── packages/                 # Shared code across apps
+│   └── shared/               # Reusable utilities/types
+│       ├── src/
+│       │   ├── types/        # Shared TS types (API responses, DTOs)
+│       │   │   └── api.ts
+│       │   └── utils/        # Shared utilities (date formatting, etc.)
+│       ├── package.json
+│       └── tsconfig.json
+├── .dockerignore
+├── .eslintrc.json            # Shared ESLint config
+├── .gitignore
+├── .prettierrc               # Shared Prettier config
+├── README.md                 # Project overview
+├── docker-compose.yml        # Docker setup (DB + server)
+├── package.json              # Root workspace (Turborepo)
+├── turbo.json                # Turborepo tasks (build, test, dev)
+└── tsconfig.json             # Base TypeScript config
