@@ -23,20 +23,22 @@ updates:
       - "dependencies"
       - "frontend"
     groups:
-      frontend-deps:
-        patterns: ["react", "next", "@types/*", "tailwind*"]
+      # framework:
+      #   patterns: []
+      # styling:       
+      #   patterns: []
+      types:
+        patterns: ["@types/*"]
 
+  # Backend Group
   - package-ecosystem: "npm"
-    directory: "/apps/server"  # Node.js Backend
+    directory: "/apps/server"
     schedule:
       interval: "weekly"
     labels:
       - "dependencies"
       - "backend"
-    ignore:
-      - dependency-name: "express"  # Example: Hold Express version
-      - dependency-name: "typescript"  # Inherited from root
-
+      
   - package-ecosystem: "npm"
     directory: "/packages/shared"  # Shared Utilities
     schedule:
@@ -45,6 +47,7 @@ updates:
       - "dependencies"
       - "shared"
 
+  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
