@@ -1,44 +1,46 @@
 {
-    "name": "my-monorepo",
-    "version": "1.0.0",
-    "description": "This is ShopVault's package file in which contains core information about the project.",
-    "keywords": [
-        "e-commerce",
-        "online",
-        "shopping",
-        "products",
-        "buy",
-        "marketingchina",
-        "quality",
-        "easy",
-        "tough"
-    ],
-    "homepage": "https://github.com/will-kenzo/ShopVault#readme",
-    "bugs": {
-        "url": "https://github.com/will-kenzo/ShopVault/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/will-kenzo/ShopVault.git"
-    },
-    "license": "MIT",
-    "author": "William Kenzo",
-    "type": "commonjs",
-    "main": "index.js",
-    "workspaces": [
-        "apps/*",
-        "packages/*"
-    ],
-    "scripts": {
-        "dev": "turbo dev",
-        "build": "turbo build",
-        "lint": "turbo lint",
-        "start": "turbo start"
-    },
-    "devDependencies": {
-        "turbo": "latest",
-        "typescript": "^5.0.0",
-        "eslint": "^8.0.0",
-        "prettier": "^3.0.0"
-    }
+  "name": "my-monorepo",
+  "version": "1.0.0",
+  "description": "This is ShopVault's package file in which contains core information about the project.",
+  "keywords": [
+    "e-commerce",
+    "online",
+    "shopping",
+    "products",
+    "buy",
+    "marketingchina",
+    "quality",
+    "easy",
+    "tough"
+  ],
+  "homepage": "https://github.com/will-kenzo/ShopVault#readme",
+  "bugs": {
+    "url": "https://github.com/will-kenzo/ShopVault/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/will-kenzo/ShopVault.git"
+  },
+  "license": "MIT",
+  "author": "William Kenzo",
+  "type": "commonjs",
+  "main": "index.js",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "start": "turbo start"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "eslint": "^9.24.0",
+    "eslint-config-next": "^15.2.4",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.3"
+  }
 }

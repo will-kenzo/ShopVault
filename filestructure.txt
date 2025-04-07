@@ -1,8 +1,7 @@
 my-monorepo/
 ├── .github/                  # GitHub Actions CI/CD workflows
-│   └── workflows/
-│       ├── client-ci.yml     # Frontend tests/builds
-│       └── server-ci.yml     # Backend tests/builds
+│   └── workflows/     # Frontend tests/builds
+│       └── node.js.yml     # Backend tests/builds
 ├── apps/
 │   ├── client/               # React Frontend (SPA/PWA)
 │   │   ├── public/           # Static assets (favicon, robots.txt)
@@ -35,6 +34,7 @@ my-monorepo/
 │       ├── .env              # Backend environment variables
 │       ├── package.json
 │       └── tsconfig.json
+├── node_modules/
 ├── packages/                 # Shared code across apps
 │   └── shared/               # Reusable utilities/types
 │       ├── src/
@@ -51,4 +51,5 @@ my-monorepo/
 ├── docker-compose.yml        # Docker setup (DB + server)
 ├── package.json              # Root workspace (Turborepo)
 ├── turbo.json                # Turborepo tasks (build, test, dev)
+├── filestructure.txt   
 └── tsconfig.json             # Base TypeScript config
